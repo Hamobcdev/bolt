@@ -1,0 +1,47 @@
+{
+  "name": "blockchain-monitoring-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "generate-types": "wagmi generate",
+    "test": "forge test",
+    "deploy:polygon": "forge script script/DeployContracts.s.sol --rpc-url polygon --broadcast --verify"
+  },
+  "dependencies": {
+    "@huggingface/inference": "^2.6.4",
+    "@tensorflow/tfjs": "^4.17.0",
+    "@wagmi/core": "^2.16.2",
+    "@web3modal/ethereum": "^2.7.1",
+    "@web3modal/react": "^2.7.1",
+    "ethers": "^6.11.1",
+    "lucide-react": "^0.344.0",
+    "openai": "^4.28.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1",
+    "recharts": "^2.12.0",
+    "viem": "^2.21.4",
+    "wagmi": "^2.14.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@wagmi/cli": "^2.1.22",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.4.11"
+  }
+}
